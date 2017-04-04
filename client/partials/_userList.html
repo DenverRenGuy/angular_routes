@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <table class="table table-bordered table-condensed" ng-init="getUsers()">
+            <thead>
+                <tr>
+                    <td><a href="#">First Name</a></td>
+                    <td><a href="#">Last Name</a></td>
+                    <td><a href="#">Favorite Lanuage</a></td>
+                </tr>
+            </thead>
+            <tr ng-repeat="user in users track by $index">
+                <td>{{ user.firstName }}</td>
+                <td>{{ user.lastName }}</td>
+                <td>{{ user.favLanguage }}</td>
+            <tr>
+        </table>
+    </div>
+
+</div>
